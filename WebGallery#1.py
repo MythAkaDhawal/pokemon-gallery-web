@@ -81,11 +81,11 @@ st.markdown(
         #MainMenu, footer { visibility: hidden; }
 
         /* Page background */
-        .stApp { background: #f0f4ff; }
+        .stApp { background: #f8f9fa; }
 
         /* App header strip */
         .app-header {
-            background: linear-gradient(135deg, #e63946 0%, #c1121f 100%);
+            background: linear-gradient(135deg, #EE1515 0%, #CC0000 100%);
             border-radius: 14px;
             padding: 22px 28px;
             color: white;
@@ -113,9 +113,9 @@ st.markdown(
         /* Pokémon card */
         .poke-card {
             background: #ffffff;
-            border-radius: 18px;
+            border-radius: 20px;
             padding: 28px 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
         }
 
         /* Pokédex # */
@@ -150,7 +150,7 @@ st.markdown(
         .stat-bar-fill {
             height: 100%;
             border-radius: 4px;
-            background: linear-gradient(to right, #e63946, #457b9d);
+            background: #EE1515;
         }
         .stat-val {
             width: 30px;
@@ -163,13 +163,13 @@ st.markdown(
         /* Info pills (height / weight) */
         .info-pill {
             display: inline-block;
-            background: #f0f4ff;
-            border: 1.5px solid #d0d8f0;
+            background: #f8f9fa;
+            border: 1.5px solid #e5e7eb;
             border-radius: 12px;
             padding: 6px 16px;
             font-size: 0.82rem;
             font-weight: 700;
-            color: #456;
+            color: #4b5563;
             margin-right: 8px;
         }
     </style>
