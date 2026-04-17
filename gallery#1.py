@@ -6,13 +6,13 @@ from io import BytesIO
 import threading
 
 # ── Theme colours ─────────────────────────────────────────────────────────────
-BG          = "#f0f4ff"       # page background
+BG          = "#F8F9FA"       # page background
 CARD_BG     = "#ffffff"       # card / input background
-RED         = "#e63946"       # Pokémon red
-RED_DARK    = "#c1121f"       # button hover
-DARK        = "#1a1a2e"       # text
-MUTED       = "#888888"       # secondary text
-BORDER      = "#d0d8f0"       # subtle border
+RED         = "#EE1515"       # Pokémon red
+RED_DARK    = "#CC0000"       # button hover
+DARK        = "#111111"       # text
+MUTED       = "#6B7280"       # secondary text
+BORDER      = "#E5E7EB"       # subtle border
 
 TYPE_COLORS = {
     "fire":     "#FF6B3D", "water":    "#4A9FE0", "grass":    "#5DBD58",
@@ -198,10 +198,8 @@ def _draw_stat_bars(event=None):
         fill_w = int(w * min(value / 255, 1.0))
         # background
         bar_bg.create_rectangle(0, 0, w, 8, fill="#eeeeee", outline="")
-        # gradient simulation: two-stop via two rectangles
-        half = fill_w // 2
-        bar_bg.create_rectangle(0, 0, half, 8, fill=RED, outline="")
-        bar_bg.create_rectangle(half, 0, fill_w, 8, fill="#457b9d", outline="")
+        # fill
+        bar_bg.create_rectangle(0, 0, fill_w, 8, fill=RED, outline="")
 
 content.bind("<Expose>", _draw_stat_bars)
 
